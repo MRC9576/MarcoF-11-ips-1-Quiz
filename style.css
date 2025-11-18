@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+}
+
+body {
+    background: #e8f5e9;
+    color: #2e2e2e;
+}
+
+/* HEADER */
+header {
+    background: url('https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1400&q=60') center/cover;
+    padding: 80px 20px;
+    text-align: center;
+    color: white;
+    text-shadow: 0 3px 8px rgba(0,0,0,0.5);
+}
+
+header h1 {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+header p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* NAV */
+nav {
+    background: #1b5e20;
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+}
+
+nav a {
+    color: #e8f5e9;
+    font-weight: 600;
+    font-size: 17px;
+    text-decoration: none;
+    transition: .3s;
+}
+
+nav a:hover {
+    color: #a5d6a7;
+    transform: scale(1.15);
+}
+
+/* CONTAINER */
+.container {
+    width: 85%;
+    max-width: 1000px;
+    margin: 30px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.1);
+    animation: fadeIn 0.4s ease-in-out;
+}
+
+/* IMAGE */
+.container img {
+    width: 100%;
+    border-radius: 12px;
+    margin: 20px 0;
+}
+
+/* TEXT */
+.container h1 {
+    text-align: center;
+    color: #1b5e20;
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+
+.container p {
+    text-align: justify;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+/* PAGE SWITCH */
+.page {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
